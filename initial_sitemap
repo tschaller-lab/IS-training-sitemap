@@ -1,0 +1,50 @@
+Evergage.init({
+    cookieDomain: "northerntrailoutfitters.com",
+    trackerUrl: "https://<ACCOUNT>.<SERVER>.evergage.com"
+}).then(() => {
+    
+    const config = {
+        global: {}, 
+        pageTypeDefault: {
+            name: "default"
+        },
+        pageTypes: [
+            {
+                name: "category",
+                action: "Category Page"
+                isMatch: () => {
+                    return Evergage.cashDom(".page[data-action='Search-Show']").length > 0 && Evergage.cashDom(".breadcrumb").length > 0;
+                },
+                catalog: {
+                    Category: {
+                        _id: Evergage.resolvers.buildCategoryId(".breadcrumb .breadcrumb-item a", 1, null, (categoryId) => categoryId.toUpperCase())
+                    }
+                }
+            },
+            {
+                name: "home",
+                action: "Homepage",
+                isMatch: () => /\/homepage/.test(window.location.href),
+                contentZones: [
+                    { name: "home_hero", selector: ".experience-carousel-bannerCarousel" },
+                    { name: "home_sub_hero", selector: ".experience-carousel-bannerCarousel + .experience-component" },
+                    { name: "home_popup" }
+                ]
+            },
+       ]
+    };
+
+    // This is a helper function created to help complete these labs.
+    const getProductsFromDataLayer = () => {
+        if (window.dataLayer) {
+            for (let i = 0; i < window.dataLayer.length; i++) {
+                if ((window.dataLayer[i].ecommerce && window.dataLayer[i].ecommerce.detail || {}).products) {
+                    return window.dataLayer[i].ecommerce.detail.products;
+                }
+            }
+        }
+    };
+  
+    Evergage.initSitemap(config);
+
+});
