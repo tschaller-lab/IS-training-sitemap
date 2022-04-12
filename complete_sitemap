@@ -41,7 +41,7 @@ Evergage.init({
                     { name: "home_sub_hero", selector: ".experience-carousel-bannerCarousel + .experience-component" },
                     { name: "home_popup" }
                 ]
-            },
+            }
         ]
     };
 
@@ -102,7 +102,7 @@ Evergage.init({
                     { name: "home_sub_hero", selector: ".experience-carousel-bannerCarousel + .experience-component" },
                     { name: "home_popup" }
                 ]
-            },
+            }
         ]
     };
 
@@ -179,7 +179,7 @@ Evergage.init({
                     { name: "home_sub_hero", selector: ".experience-carousel-bannerCarousel + .experience-component" },
                     { name: "home_popup" }
                 ]
-            },
+            }
         ]
     };
 
@@ -274,7 +274,7 @@ Evergage.init({
                     { name: "home_sub_hero", selector: ".experience-carousel-bannerCarousel + .experience-component" },
                     { name: "home_popup" }
                 ]
-            },
+            }
         ]
     };
 
@@ -392,7 +392,7 @@ Evergage.init({
                     { name: "home_sub_hero", selector: ".experience-carousel-bannerCarousel + .experience-component" },
                     { name: "home_popup" }
                 ]
-            },
+            }
         ]
     };
 
@@ -511,7 +511,7 @@ Evergage.init({
                     { name: "home_sub_hero", selector: ".experience-carousel-bannerCarousel + .experience-component" },
                     { name: "home_popup" }
                 ]
-            },
+            }
         ]
     };
 
@@ -645,7 +645,7 @@ Evergage.init({
                     { name: "home_sub_hero", selector: ".experience-carousel-bannerCarousel + .experience-component" },
                     { name: "home_popup" }
                 ]
-            },
+            }
         ]
     };
 
