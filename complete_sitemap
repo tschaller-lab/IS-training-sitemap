@@ -191,7 +191,7 @@ Evergage.init({
 // ****** Sitemap Behavioral Actions and the Catalog Lab ******
 
 
-// Step 6 - Catalog
+// Step 4 - Catalog
 
 Evergage.init({
     cookieDomain: "northerntrailoutfitters.com",
@@ -292,7 +292,7 @@ Evergage.init({
 
 });
 
-// Step 7 - Catalog (Related Catalog Objects)
+// Step 5 - Catalog (Related Catalog Objects)
 
 Evergage.init({
     cookieDomain: "northerntrailoutfitters.com",
@@ -410,7 +410,7 @@ Evergage.init({
 
 });
 
-// Step 8 - Catalog (Categories)
+// Step 6 - Catalog (Categories)
 
 Evergage.init({
     cookieDomain: "northerntrailoutfitters.com",
@@ -530,7 +530,7 @@ Evergage.init({
 });
 
 
-// Step 9 - Catalog (add to cart)
+// Step 7 - Catalog (add to cart)
 
 Evergage.init({
     cookieDomain: "northerntrailoutfitters.com",
