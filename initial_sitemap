@@ -11,7 +11,7 @@ Evergage.init({
         pageTypes: [
             {
                 name: "category",
-                action: "Category Page"
+                action: "Category Page",
                 isMatch: () => {
                     return Evergage.cashDom(".page[data-action='Search-Show']").length > 0 && Evergage.cashDom(".breadcrumb").length > 0;
                 },
