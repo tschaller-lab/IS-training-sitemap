@@ -19,7 +19,7 @@ Evergage.init({
                     Category: {
                         _id: Evergage.resolvers.buildCategoryId(".breadcrumb .breadcrumb-item a", 1, null, (categoryId) => categoryId.toUpperCase())
                     }
-                }
+                },
             },
             {
                 name: "home",
